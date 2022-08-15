@@ -8,5 +8,5 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'Fun Facts About Countries';
-  faCoffee = faCoffee;
+  showMenu = false;
 }
