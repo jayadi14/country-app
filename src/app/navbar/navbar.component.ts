@@ -15,6 +15,7 @@ export class NavbarComponent implements OnInit {
   faCartArrowDown = faCartArrowDown;
   faMagnifyingGlass = faMagnifyingGlass;
 
+
   ngOnInit(): void {
   }
 
