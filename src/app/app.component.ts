@@ -8,18 +8,10 @@ import { faCartArrowDown, faClipboard, faClock, faCoffee, faEnvelopeOpen, faFile
 })
 export class AppComponent {
   title = 'Fun Facts About Countries';
-  showMenu = false;
-  showDemos = false;
-  showPages = false;
-  faCartArrowDown = faCartArrowDown;
-  faMagnifyingGlass = faMagnifyingGlass;
   faFileCode = faFileCode;
   faClock = faClock;
   faClipBoard = faClipboard;
   faNewsPaper = faNewspaper;
   faPallete = faPalette;
   faPager = faPager;
-  faEnvelope = faEnvelopeOpen;
-  faLocation = faLocationDot;
-  faPhone = faPhone;
 }
