@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faCartArrowDown, faClipboard, faClock, faCoffee, faEnvelopeOpen, faFileCode, faLocationDot, faMagnifyingGlass, faNewspaper, faPager, faPalette, faPallet, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faClipboard, faClock, faFileCode, faNewspaper, faPager, faPalette } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',

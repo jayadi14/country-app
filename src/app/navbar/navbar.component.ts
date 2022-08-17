@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCartArrowDown, faClipboard, faClock, faCoffee, faEnvelopeOpen, faFileCode, faLocationDot, faMagnifyingGlass, faNewspaper, faPager, faPalette, faPallet, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faCartArrowDown, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -14,6 +15,12 @@ export class NavbarComponent implements OnInit {
   showPages = false;
   faCartArrowDown = faCartArrowDown;
   faMagnifyingGlass = faMagnifyingGlass;
+
+  constructor(private router: Router){}
+
+  public buttonClick(fragment: string): void {
+    this.router.navigateByUrl('#' + fragment);
+  }
 
 
   ngOnInit(): void {
