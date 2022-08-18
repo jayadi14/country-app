@@ -1,6 +1,5 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { faCartArrowDown, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -14,11 +13,6 @@ export class NavbarComponent implements OnInit {
   showPages = false;
   faCartArrowDown = faCartArrowDown;
   faMagnifyingGlass = faMagnifyingGlass;
-
-  constructor(private router: Router){}
-
-
-
 
   toDemos(){
     document.getElementById("demos")?.scrollIntoView({behavior:"smooth"});

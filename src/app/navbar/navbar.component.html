@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="bg-white  border-gray-200 px-2 sm:px-4 py-2.5 rounded sticky top-0 z-10">
+<nav class="bg-white  border-gray-200 px-2 py-2.5 sticky top-0 z-10">
   <div class="container w-full max-w-[1004px] px-1 flex flex-wrap justify-between items-center mx-auto">
 
 
@@ -111,14 +111,14 @@
     <div class="grid text-sm font-medium bg-white">
       <div class="block py-2">
         <button class="flex" (click)="showDemos = !showDemos">
-          <button (click)="toDemos()" routerLink="/demos" routerLinkActive="active" class="text-blue-400 hover:text-blue-700">DEMOS</button>
+          <button (click)="toDemos()" routerLink="/demos" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-blue-400 hover:text-blue-700">DEMOS</button>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon w-6 h-6">
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </button>
 
         <div class="space-y-2" *ngIf="showDemos">
-          <div class="pl-3"><button (click)="toDemos()" routerLink="/demos" routerLinkActive="active" class="text-blue-400 hover:text-blue-400 cursor-pointer">MAIN
+          <div class="pl-3"><button (click)="toDemos()" routerLink="/demos" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-blue-400 hover:text-blue-400 cursor-pointer">MAIN
               DEMO</button></div>
           <div class="pl-3"><a class="text-black hover:text-blue-400 cursor-pointer">SdivM
               SEO</a>
@@ -131,18 +131,18 @@
 
 
       <div class="block py-2">
-        <button (click)="toAbout()" routerLink="/about" routerLinkActive="active" class="text-gray-900 hover:text-blue-700">ABOUT</button>
+        <button (click)="toAbout()" routerLink="/about" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-gray-900 hover:text-blue-700">ABOUT</button>
       </div>
 
       <div class="block py-2">
-        <button (click)="toFeatures()" routerLink="/features" routerLinkActive="active" class="text-gray-900 hover:text-blue-700 flex" (click)="showPages = !showPages">PAGES <svg
+        <button (click)="toFeatures()" routerLink="/features" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-gray-900 hover:text-blue-700 flex" (click)="showPages = !showPages">PAGES <svg
             xmlns="http://www.w3.org/2000/svg" class="icon w-6 h-6">
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg></button>
 
 
         <div class="space-y-2 block" *ngIf="showPages">
-          <div class="pl-3"><button (click)="toFeatures()" routerLink="/features" routerLinkActive="active" class="text-black hover:text-blue-400 cursor-pointer">STYLE GUIDE</button>
+          <div class="pl-3"><button (click)="toFeatures()" routerLink="/features" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-black hover:text-blue-400 cursor-pointer">STYLE GUIDE</button>
           </div>
           <div class="pl-3"><a class="text-black hover:text-blue-400 cursor-pointer">GUTENBERG</a>
           </div>
@@ -153,13 +153,13 @@
       </div>
 
       <div class="">
-        <button (click)="toPortfolio()" routerLink="/portfolio" routerLinkActive="active" class="block py-2 text-gray-900 hover:text-blue-700">BLOG</button>
+        <button (click)="toPortfolio()" routerLink="/portfolio" routerLinkActive="active" (click)="showMenu = !showMenu" class="block py-2 text-gray-900 hover:text-blue-700">BLOG</button>
       </div>
       <div class="">
-        <button (click)="toShop()" routerLink="/shop" routerLinkActive="active" class="block py-2 text-gray-900 rounded hover:text-blue-700">SHOP</button>
+        <button (click)="toShop()" routerLink="/shop" routerLinkActive="active" (click)="showMenu = !showMenu" class="block py-2 text-gray-900 rounded hover:text-blue-700">SHOP</button>
       </div>
       <div class="">
-        <button (click)="toShop()" routerLink="/shop" routerLinkActive="active" class="block py-2 text-gray-900 hover:text-blue-700">CONTACT</button>
+        <button (click)="toContact()" routerLink="/contact" routerLinkActive="active" (click)="showMenu = !showMenu" class="block py-2 text-gray-900 hover:text-blue-700">CONTACT</button>
       </div>
     </div>
   </div>
