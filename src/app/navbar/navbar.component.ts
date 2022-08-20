@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faCartArrowDown, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 
 @Component({

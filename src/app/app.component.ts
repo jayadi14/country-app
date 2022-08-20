@@ -3,6 +3,7 @@ import { faClipboard, faClock, faFileCode, faNewspaper, faPager, faPalette } fro
 
 @Component({
   selector: 'app-root',
+  // template: '',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -14,4 +15,6 @@ export class AppComponent {
   faNewsPaper = faNewspaper;
   faPallete = faPalette;
   faPager = faPager;
+
+
 }

@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id":1,
+      "img":"assets/img/grid8.webp",
+      "title":"Artikel 1 Json",
+      "content":"eStar provides a complete options set for you to customize the website, such as custom fonts, custom colors or layout options. With the target of using eStar to build multiple types of websites and keeping everything simple, the options are chosen carefully to make sure you’re not lost in the options maze."
+    },
+    {
+      "id":2,
+      "img":"assets/img/grid7.webp",
+      "title":"Artikel 2 Json",
+      "content":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui necessitatibus inventore, accusantium voluptates ut libero, nemo obcaecati in excepturi, assumenda illum ratione. Expedita sapiente voluptas iusto nisi voluptatum quos ratione distinctio officia commodi sint tenetur mollitia deleniti modi et aliquam beatae perferendis, incidunt iure accusantium quisquam doloremque minima quae cumque!"
+    },
+    {
+      "id":3,
+      "img":"assets/img/grid5.webp",
+      "title":"Artikel 3 Json",
+      "content":"Matematika ilmu yang menyenangkan, jangan takut belajar matematika, ayo belajar matematika kalau kamu berlatih pasti bisa matematika itu tidak hanya menghafal rumus tapi harus berlatih kalau kamu berlatih pasti bisa percayalah pasti bisa"
+    }
+  ]
+}
