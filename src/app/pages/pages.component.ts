@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import blogsJson from '../shared/blogs.json';
 
 interface blogs{
-  id: Number;
-  title: String;
-  content: String;
-  img: String;
+  id: number;
+  title: string;
+  content: string;
+  img: string;
 }
 
 @Component({
