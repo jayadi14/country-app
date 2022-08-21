@@ -7,6 +7,12 @@ interface blogs{
   content: string;
   img: string;
 }
+interface blogs2{
+  id: number;
+  title: string;
+  content: string;
+  img: string;
+}
 
 @Component({
   selector: 'app-pages',
@@ -15,6 +21,7 @@ interface blogs{
 })
 export class PagesComponent implements OnInit {
   blogs: blogs[] = blogsJson.data;
+  blogs2: blogs2[] = blogsJson.data2;
 
   constructor() { }
 
