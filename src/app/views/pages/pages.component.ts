@@ -1,13 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import blogsJson from '../shared/blogs.json';
 
+
 interface blogs{
-  id: number;
-  title: string;
-  content: string;
-  img: string;
-}
-interface blogs2{
   id: number;
   title: string;
   content: string;
@@ -21,11 +16,13 @@ interface blogs2{
 })
 export class PagesComponent implements OnInit {
   blogs: blogs[] = blogsJson.data;
-  blogs2: blogs2[] = blogsJson.data2;
 
-  constructor() { }
+  constructor(
 
-  ngOnInit(): void {
+  ) { }
+
+  ngOnInit() {
+
   }
 
 }
