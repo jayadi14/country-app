@@ -13,6 +13,7 @@ import { ShopComponent } from './shop/shop.component';
 import { ContactComponent } from './contact/contact.component';
 import { ViewsComponent } from './views.component';
 import { PagesDetailComponent } from './pages/pages-detail/pages-detail.component';
+import {HttpClientModule} from '@angular/common/http'
 
 
 
@@ -32,7 +33,8 @@ import { PagesDetailComponent } from './pages/pages-detail/pages-detail.componen
   imports: [
     CommonModule,
     ViewsRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ]
 })
 export class ViewsModule {

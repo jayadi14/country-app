@@ -1,14 +1,24 @@
-<div class="flex">
-  <div class="w-[150px]">
-
-  </div>
-  <div class="">
-      <p class="text-xl text-center">Building a website <em>might</em> takes a lot of time and effort. That’s why we
-        build eStar to help you do
-        that easier. Check out the features of this awesome WordPress theme below
-      </p>
-  </div>
-  <div class="w-[150px]">
-
-  </div>
+<br><br>
+<div class="text-center">
+  <p class="text-3xl font-bold">Articles About Us From DummyAPI</p>
 </div>
+<br><br>
+
+<div class="container w-full max-w-[1004px] px-1 mx-auto">
+
+  <div class="grid md:grid-cols-3 gap-x-10 gap-y-7">
+    <div class="max-w-prose rounded overflow-hidden shadow-lg" *ngFor="let data of posts" >
+      <img class="w-full" [src]="data.picture">
+      <div class="px-6 py-4">
+        <a [routerLink]="['/pagesDetail', data.id]" routerLinkActive="active"><div class="font-bold text-xl mb-2 hover:underline">{{data.firstName}}</div></a>
+        <p class="text-gray-700 text-base">
+          {{data.lastName}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<br><br><br>
