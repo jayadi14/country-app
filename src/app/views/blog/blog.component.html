@@ -1,6 +1,6 @@
 <br><br>
 <div class="text-center">
-  <p class="text-3xl font-bold">Articles About Us From DummyAPI</p>
+  <p class="text-3xl font-bold">Talent From DummyAPI</p>
 </div>
 <br><br>
 
@@ -10,10 +10,10 @@
     <div class="max-w-prose rounded overflow-hidden shadow-lg" *ngFor="let data of posts" >
       <img class="w-full" [src]="data.picture">
       <div class="px-6 py-4">
-        <a [routerLink]="['/pagesDetail', data.id]" routerLinkActive="active"><div class="font-bold text-xl mb-2 hover:underline">{{data.firstName}}</div></a>
-        <p class="text-gray-700 text-base">
+        <a [routerLink]="['/blogDetail', data.id]" routerLinkActive="active"><div class="font-bold text-xl mb-2 hover:underline">{{data.firstName}} {{data.lastName}}</div></a>
+        <!-- <p class="text-gray-700 text-base">
           {{data.lastName}}
-        </p>
+        </p> -->
       </div>
     </div>
   </div>

@@ -1,0 +1,65 @@
+<br><br>
+<div class="text-center" *ngIf="posts">
+      <div class="container w-full max-w-[1004px] px-1 mx-auto">
+        <div class="grid md:grid-cols-2 gap-x-3">
+          <div class="mx-auto">
+            <img class="h-[300px] w-[300px]" [src]="posts.picture">
+            <div class="grid text-left gap-y-3">
+              <p class="text-3xl text-blue-900 font-bold">Social Links</p>
+              <div class="flex gap-2">
+                <div>
+                  <a href="">
+                    <img src="assets/img/fb.png" class="hover:scale-125 rounded-full max-w-[45px] max-h-[45px]" /></a>
+                </div>
+                <div>
+                  <a href="">
+                    <img src="assets/img/twit.webp" class="hover:scale-125 rounded-full max-w-[45px] max-h-[45px]" /></a>
+                </div>
+                <div>
+                  <a href="">
+                    <img src="assets/img/yt.png" class="hover:scale-125 rounded-full max-w-[45px] max-h-[45px]" />
+                  </a>
+                </div>
+              </div><br>
+              <div class="grid">
+                  <p class="text-3xl text-center font-bold">Basic Data</p><br>
+                  <div class="bg-blue-200">
+                    <div class="flex gap-x-1">
+                      <p class="font-bold">Full Name :</p>
+                      <p>{{posts.firstName}} {{posts.lastName}}</p>
+                    </div>
+                    <div class="flex gap-x-1">
+                      <p class="font-bold">Gender :</p>
+                      <p>{{posts.gender}}</p>
+                    </div>
+                    <div class="flex gap-x-1">
+                      <p class="font-bold">Title :</p>
+                      <p>{{posts.title}}</p>
+                    </div>
+                    <div class="flex gap-x-1">
+                      <p class="font-bold">Email :</p>
+                      <p>{{posts.email}}</p>
+                    </div>
+                  </div>
+              </div><br>
+            </div>
+          </div>
+          <div class="text-left">
+            <div class="grid gap-y-2">
+              <p class="text-2xl font-bold">Let's know more about</p>
+              <p class="text-5xl text-blue-900 font-bold uppercase">{{posts.firstName}} {{posts.lastName}}</p>
+            </div><br>
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid soluta quidem sapiente sed eveniet culpa dolorem corrupti magni, dicta ducimus distinctio et adipisci, error ullam omnis magnam totam! Aliquid?</p><br>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis beatae ipsa culpa iste unde fugit quod harum, odio ullam numquam amet. Temporibus libero incidunt, quidem aut tempore optio! In, repellat.</p><br><br>
+
+              <p class="text-3xl text-blue-900 font-bold">{{posts.firstName}} Portfolio</p><br>
+              <div class="aspect-w-16 aspect-h-9">
+                <iframe src="https://www.youtube.com/embed/IkxX1Vjgzck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<br><br>

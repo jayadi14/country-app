@@ -8,6 +8,7 @@ import { ShopComponent } from './shop/shop.component';
 import { ContactComponent } from './contact/contact.component';
 import { ViewsComponent } from './views.component';
 import { PagesDetailComponent } from './pages/pages-detail/pages-detail.component';
+import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component'
 
 const routes: Routes = [
   {
@@ -29,6 +30,7 @@ const routes: Routes = [
       { path: 'pages', component: PagesComponent},
       { path: 'pagesDetail/:id', component: PagesDetailComponent},
       { path: 'blog', component: BlogComponent },
+      { path: 'blogDetail/:id', component: BlogDetailComponent},
       { path: 'shop', component: ShopComponent },
       { path: 'contact', component: ContactComponent },
     ]
