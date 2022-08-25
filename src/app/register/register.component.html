@@ -1,0 +1,19 @@
+<div class="h-screen w-screen flex justify-center items-center bg-blue-200">
+  <div class="items-center justify-center h-full max-h-[400px] w-[400px] rounded-2xl shadow-2xl bg-white text-center p-5">
+
+          <div class="flex items-center justify center">
+            <img class="mx-auto w-[55px] h-[60px]" src="assets/img/navbar.webp">
+          </div><br>
+          <div>
+            <p class="text-3xl font-bold text-blue-500 text-center">REGISTER</p><br>
+          </div>
+
+            <form class="grid items-center gap-y-3 p-3" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+              <input type="text" name="firstName" formControlName="firstName" class="bg-gray-100 text-sm w-full p-2.5" placeholder="First Name" required>
+              <input type="text" name="lastName" formControlName="lastName" class="bg-gray-100 text-sm w-full p-2.5" placeholder="Last Name" required>
+              <input type="text" name="email" formControlName="email" class="bg-gray-100 text-sm w-full p-2.5" placeholder="Email" required>
+              <button type="submit" [disabled]="!profileForm.valid" class=" text-white bg-blue-500 hover:bg-blue-500 font-bold  text-sm rounded px-4 py-2.5 mb-2">Register</button>
+            </form>
+
+  </div>
+</div>

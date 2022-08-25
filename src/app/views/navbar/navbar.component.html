@@ -25,14 +25,15 @@
       <div class="hidden sm:flex flex-row  text-sm font-medium bg-white">
         <div class="group relative dropdown">
           <a href="">
-          <button
-            class="block py-2 pr-4 pl-3 text-blue-400 hover:bg-gray-100 hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-blue-400  dark:hover:bg-gray-700 dark:hover:text-blue-600 dark:hover:bg-transparent">DEMOS</button></a>
+            <button
+              class="block py-2 pr-4 pl-3 text-blue-400 hover:bg-gray-100 hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-blue-400  dark:hover:bg-gray-700 dark:hover:text-blue-600 dark:hover:bg-transparent">DEMOS</button></a>
           <div class="group-hover:block absolute hidden h-auto">
             <div class="top-0 w-48 bg-white shadow px-6 py-2">
               <div class="py-1">
                 <a href=""><button
-                  class="text-blue-400 font-semibold text-base uppercase hover:text-blue-400 cursor-pointer" [routerLink]="['/home']" routerLinkActive="active">MAIN
-                  DEMO</button></a></div>
+                    class="text-blue-400 font-semibold text-base uppercase hover:text-blue-400 cursor-pointer"
+                    [routerLink]="['/home']" routerLinkActive="active">MAIN
+                    DEMO</button></a></div>
               <div class="py-1"><a
                   class="text-black font-semibold text-base uppercase hover:text-blue-400 cursor-pointer">SdivM
                   SEO</a>
@@ -85,12 +86,18 @@
       <div class="flex">
         <div>
           <a href="#" class="block py-2 pr-4 pl-3">
-            <fa-icon [icon]="faCartArrowDown" style="color: gray"></fa-icon></a>
+            <fa-icon [icon]="faCartArrowDown" style="color: gray"></fa-icon>
+          </a>
         </div>
 
         <div>
           <a href="#" class="block py-2 pr-4 pl-3">
-            <fa-icon [icon]="faMagnifyingGlass" style="color: gray"></fa-icon></a>
+            <fa-icon [icon]="faMagnifyingGlass" style="color: gray"></fa-icon>
+          </a>
+        </div>
+        <div>
+          <button [routerLink]="['/login']" routerLinkActive="active" type="button"
+            class=" text-blue-500 bg-white outline outline-2 outline-blue-500 font-bold  text-sm rounded px-5 py-2 mb-2">Login</button>
         </div>
       </div>
     </div>
@@ -113,14 +120,16 @@
     <div class="grid text-sm font-medium bg-white">
       <div class="block py-2">
         <button class="flex" (click)="showDemos = !showDemos">
-          <button [routerLink]="['/home']" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-blue-400 hover:text-blue-700">DEMOS</button>
+          <button [routerLink]="['/home']" routerLinkActive="active" (click)="showMenu = !showMenu"
+            class="text-blue-400 hover:text-blue-700">DEMOS</button>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon w-6 h-6">
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </button>
 
         <div class="space-y-2" *ngIf="showDemos">
-          <div class="pl-3"><button [routerLink]="['/home']" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-blue-400 hover:text-blue-400 cursor-pointer">MAIN
+          <div class="pl-3"><button [routerLink]="['/home']" routerLinkActive="active" (click)="showMenu = !showMenu"
+              class="text-blue-400 hover:text-blue-400 cursor-pointer">MAIN
               DEMO</button></div>
           <div class="pl-3"><a class="text-black hover:text-blue-400 cursor-pointer">SdivM
               SEO</a>
@@ -133,18 +142,21 @@
 
 
       <div class="block py-2">
-        <button [routerLink]="['/about']" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-gray-900 hover:text-blue-700">ABOUT</button>
+        <button [routerLink]="['/about']" routerLinkActive="active" (click)="showMenu = !showMenu"
+          class="text-gray-900 hover:text-blue-700">ABOUT</button>
       </div>
 
       <div class="block py-2">
-        <button [routerLink]="['/pages']" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-gray-900 hover:text-blue-700 flex" (click)="showPages = !showPages">PAGES <svg
+        <button [routerLink]="['/pages']" routerLinkActive="active" (click)="showMenu = !showMenu"
+          class="text-gray-900 hover:text-blue-700 flex" (click)="showPages = !showPages">PAGES <svg
             xmlns="http://www.w3.org/2000/svg" class="icon w-6 h-6">
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg></button>
 
 
         <div class="space-y-2 block" *ngIf="showPages">
-          <div class="pl-3"><button [routerLink]="['/pages']" routerLinkActive="active" (click)="showMenu = !showMenu" class="text-black hover:text-blue-400 cursor-pointer">STYLE GUIDE</button>
+          <div class="pl-3"><button [routerLink]="['/pages']" routerLinkActive="active" (click)="showMenu = !showMenu"
+              class="text-black hover:text-blue-400 cursor-pointer">STYLE GUIDE</button>
           </div>
           <div class="pl-3"><a class="text-black hover:text-blue-400 cursor-pointer">GUTENBERG</a>
           </div>
@@ -155,13 +167,16 @@
       </div>
 
       <div class="">
-        <button [routerLink]="['/blog']" routerLinkActive="active" (click)="showMenu = !showMenu" class="block py-2 text-gray-900 hover:text-blue-700">BLOG</button>
+        <button [routerLink]="['/blog']" routerLinkActive="active" (click)="showMenu = !showMenu"
+          class="block py-2 text-gray-900 hover:text-blue-700">BLOG</button>
       </div>
       <div class="">
-        <button [routerLink]="['/shop']" routerLinkActive="active" (click)="showMenu = !showMenu" class="block py-2 text-gray-900 rounded hover:text-blue-700">SHOP</button>
+        <button [routerLink]="['/shop']" routerLinkActive="active" (click)="showMenu = !showMenu"
+          class="block py-2 text-gray-900 rounded hover:text-blue-700">SHOP</button>
       </div>
       <div class="">
-        <button [routerLink]="['/contact']" routerLinkActive="active" (click)="showMenu = !showMenu" class="block py-2 text-gray-900 hover:text-blue-700">CONTACT</button>
+        <button [routerLink]="['/contact']" routerLinkActive="active" (click)="showMenu = !showMenu"
+          class="block py-2 text-gray-900 hover:text-blue-700">CONTACT</button>
       </div>
     </div>
   </div>
