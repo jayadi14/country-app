@@ -14,8 +14,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ViewsComponent } from './views.component';
 import { PagesDetailComponent } from './pages/pages-detail/pages-detail.component';
 import {HttpClientModule} from '@angular/common/http';
-import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component'
-
+import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
+import { BlogUpdateComponent } from './blog/blog-update/blog-update.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,12 +32,14 @@ import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component'
     ContactComponent,
     PagesDetailComponent,
     BlogDetailComponent,
+    BlogUpdateComponent,
   ],
   imports: [
     CommonModule,
     ViewsRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ]
 })
 export class ViewsModule {

@@ -28,6 +28,8 @@ export class BlogDetailComponent implements OnInit {
     });
   }
 
+
+
   ngOnInit(): void {
   }
 

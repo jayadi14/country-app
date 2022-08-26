@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-register',
@@ -9,26 +10,19 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class RegisterComponent implements OnInit {
 
-  // posts: any;
-  // regId?: string | null;
 
   constructor(private http: HttpClient) { }
 
-  // form: FormGroup;
-  // this.form = this.fb.group({
-  //   firstName: [''],
-  //   avatar: [null],
-  // });
+
+
 
   profileForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl('')
+    firstName: new FormControl('', Validators.required),
+    lastName: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required)
   });
 
-  // onSubmit() {
-  //   console.warn(this.profileForm.value);
-  // }
+
 
   onSubmit(){
     const headers = new HttpHeaders({"app-id": "63044dfc6a97404475895aa4"});
